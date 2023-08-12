@@ -21,10 +21,13 @@ var _ = (() => {
   // index.ts
   var hello_tsup_exports = {};
   __export(hello_tsup_exports, {
-    A: () => A,
-    B: () => B
+    isEmpty: () => isEmpty
   });
-  var A = "hello";
-  var B = "aaa";
+  var isEmpty = (value) => {
+    if (typeof value === "boolean") {
+      return false;
+    }
+    return true;
+  };
   return __toCommonJS(hello_tsup_exports);
 })();

@@ -20,14 +20,16 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // index.ts
 var hello_tsup_exports = {};
 __export(hello_tsup_exports, {
-  A: () => A,
-  B: () => B
+  isEmpty: () => isEmpty
 });
 module.exports = __toCommonJS(hello_tsup_exports);
-var A = "hello";
-var B = "aaa";
+var isEmpty = (value) => {
+  if (typeof value === "boolean") {
+    return false;
+  }
+  return true;
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  A,
-  B
+  isEmpty
 });

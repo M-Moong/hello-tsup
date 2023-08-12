@@ -1,4 +1,3 @@
-declare const A = "hello";
-declare const B = "aaa";
+declare const isEmpty: (value: any) => boolean;
 
-export { A, B };
+export { isEmpty };

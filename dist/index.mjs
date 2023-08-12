@@ -1,7 +1,10 @@
 // index.ts
-var A = "hello";
-var B = "aaa";
+var isEmpty = (value) => {
+  if (typeof value === "boolean") {
+    return false;
+  }
+  return true;
+};
 export {
-  A,
-  B
+  isEmpty
 };
